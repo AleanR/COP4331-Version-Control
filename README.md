@@ -128,3 +128,4 @@ All core application logic, database structure, and system setup were implemente
 
 ## License
 
+MIT License

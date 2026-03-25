@@ -1,0 +1,34 @@
+@startuml
+
+start
+
+:User opens app;
+
+:Enter login credentials;
+:code.js sends request to Login.php;
+
+:Login.php checks credentials in database;
+
+if (Credentials valid?) then (Yes)
+  :Redirect to color.html;
+
+  if (User action?) then (Add Color)
+    :Enter color data;
+    :code.js sends request to AddColor.php;
+    :Insert color into database;
+    :Show success;
+
+  else (Search Colors)
+    :Enter search query;
+    :code.js sends request to SearchColors.php;
+    :Retrieve results from database;
+    :Display colors;
+  endif
+
+else (No)
+  :Show login error;
+endif
+
+stop
+
+@enduml

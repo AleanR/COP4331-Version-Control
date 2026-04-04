@@ -1,0 +1,16 @@
+{
+  "name": "colors-lamp",
+  "version": "1.0.0",
+  "description": "Linting for Colors LAMP project",
+  "scripts": {
+    "lint:html": "htmlhint public/index.html public/color.html",
+    "lint:css": "stylelint public/css/styles.css",
+    "lint:js": "eslint public/js/code.js"
+  },
+  "devDependencies": {
+    "htmlhint": "^1.1.4",
+    "stylelint": "^15.0.0",
+    "stylelint-config-standard": "^34.0.0",
+    "eslint": "^8.0.0"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "cop4331-colors",
+  "version": "1.0.0",
+  "description": "COP4331 LAMP Stack Colors App - test suite",
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint public/js/colorUtils.js api/apiClient.js tests/"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "testMatch": [
+      "**/tests/**/*.test.js"
+    ]
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "jest": "^29.7.0",
+    "nock": "^13.5.0",
+    "node-fetch": "^2.7.0"
+  }
+}
